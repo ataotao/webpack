@@ -48,7 +48,13 @@ module.exports = {
         new webpack.optimize.UglifyJsPlugin(),
         //分离CSS和JS文件
         // new ExtractTextPlugin("style.css")
-        new ExtractTextPlugin("[name]-[hash:8].css")
+        new ExtractTextPlugin("[name]-[hash:8].css"),
+        //生产环境react官网推荐设置
+        new webpack.DefinePlugin({
+            'process.env': {
+                NODE_ENV: JSON.stringify('production')
+            }
+        }),
     ],
 
 }
