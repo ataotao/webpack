@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'FiraCode';
+    src: url('./font/FiraCode-Regular.woff2') format('woff2'),
+        url('./font/FiraCode-Regular.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.div_img{
+    width: 100px;
+    height: 100px;
+    background: url('./img/img2.jpg');
+}
+
+.hello {
+    color: red;
+    font-family: 'FiraCode';
+    width: 500px;
+}

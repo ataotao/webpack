@@ -1,0 +1,19 @@
+{
+  "name": "webpack-author-libraries-10",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/webpack-numbers.js",
+  "scripts": {
+    "build": "webpack -p",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lodash": "^4.17.11",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "readme": "遵循生产环境指南中的步骤，来优化生产环境下的输出。那么，我们还需要通过设置 package.json 中的 main 字段，添加生成 bundle 的文件路径。main: dist/webpack-numbers.js或者module: src/index.js"
+}
